@@ -3,54 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eric Li</title>
+  <title>About - Eric Li</title>
   <meta name="description" content="Personal website of Eric Li" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="container">
-    <header class="hero">
-      <h1>Eric Li</h1>
-      <p class="tagline">Builder, researcher, and tinkerer.</p>
-      <nav class="links">
-        <a href="mailto:eric@frontwind.ai">Email</a>
-        <span class="dot">·</span>
-        <a href="https://github.com/Eggnog82" target="_blank" rel="noopener">GitHub</a>
-      </nav>
+  <nav class="masthead">
+    <div class="masthead-inner">
+      <a class="site-title" href="/">Eric Li</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header class="profile">
+      <h1 class="profile-name">Eric Li</h1>
+      <p class="profile-sub">Yale University 26'</p>
     </header>
 
     <section id="about">
       <h2>About</h2>
       <p>
-        Hi, I'm Eric. I work on projects at the intersection of software and
-        science. This site is a home for the things I'm building, writing,
-        and thinking about.
+        Hi, I&rsquo;m Eric. I just graduated from Yale University with a B.S. in
+        Computer Science and Molecular, Cellular, and Developmental Biology. I
+        work at the intersection of AI and biology, building agents and
+        fine-tuned models for biotech workflows.
+      </p>
+      <p>
+        Some things I&rsquo;ve been working on: I&rsquo;m currently
+        <a href="https://github.com/Eggnog82/target-prio-agent">fine-tuning Qwen for target prioritization workflows</a>
+        (Jun 2026 &ndash; Present) &mdash; I built a 27-tool biomedical RL
+        environment with verifiable rewards via a co-designed 24-dimension
+        expert rubric and an LLM-judge rejection-sampling filter for
+        long-horizon, multi-tool call biotech target prioritization workflows. I
+        distilled a frontier model (Claude) into Qwen3.5-9B via SFT (full
+        fine-tune, DeepSpeed ZeRO-2 CPU-offload, 2&times;H100), raising the
+        average expert-rubric score from 1.94 to 3.75/5 (vs Claude = 4.36/5) and
+        beating the rubric-prompted base model by 1.7 points (2.05/5), deployed
+        on Modal + Cloud Run.
+      </p>
+      <p>
+        In the <a href="https://vandijklab.org/">van Dijk Lab</a> at Yale
+        (Sept 2025 &ndash; Present), I&rsquo;ve been enabling chain-of-thought
+        reasoning in C2S models &mdash; improving accuracy and enabling
+        reasoning for biological tasks with SFT in C2S Qwen models, biological
+        foundation models capable of finding new variants in cancer. I also
+        spent time building AI SaaS tools for the biotech community
+        (Feb 2026 &ndash; Jun 2026), where I secured a pilot with a biotech
+        advisory firm for an AI competitive intelligence SaaS web platform and
+        talked to 20 biotech/investor firms to learn about their pain points.
+      </p>
+      <p>
+        Previously, I worked on AI agents at Applovin and was building a better
+        Siri with Martin (YC S23). I also achieved MIT Battlecode top 10 and the
+        Most Innovative Breakthrough Award in 2025, and was named a Regeneron
+        STS Top 300 Scholar in 2022.
       </p>
     </section>
 
+    <section id="education">
+      <h2>Education</h2>
+      <ul class="edu-list">
+        <li>B.S. in Computer Science and Molecular, Cellular, Developmental Biology, Yale University, 2022 &ndash; 2026</li>
+      </ul>
+    </section>
+
     <section id="projects">
-      <h2>Projects</h2>
+      <h2>Major Projects</h2>
       <ul class="project-list">
         <li>
-          <h3>Coming soon</h3>
-          <p>I'll be adding projects here shortly — check back soon.</p>
+          <strong>Fine-tuning Open-source Models for Target Prioritization Workflows</strong><br />
+          [<a href="https://github.com/Eggnog82/target-prio-agent">Code</a>]
         </li>
       </ul>
     </section>
 
-    <section id="contact">
-      <h2>Get in touch</h2>
+    <footer class="site-footer">
       <p>
-        The best way to reach me is by
-        <a href="mailto:eric@frontwind.ai">email</a>.
+        <a href="mailto:eric.w.li1717@gmail.com">Email</a>
+        &nbsp;&middot;&nbsp;
+        <a href="https://www.linkedin.com/in/eric-li-yale26/">LinkedIn</a>
+        &nbsp;&middot;&nbsp;
+        <a href="https://github.com/Eggnog82">GitHub</a>
       </p>
-    </section>
-
-    <footer>
-      <p>© 2026 Eric Li</p>
+      <p class="copyright">&copy; 2026 Eric Li</p>
     </footer>
   </main>
 </body>
